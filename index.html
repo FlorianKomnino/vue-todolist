@@ -27,7 +27,8 @@
                     </div>
                     <div class="col-12 text-center">
                         <label for="inputAddToDoItem"> Inserisci qui un nuovo impegno: </label>
-                        <input type="text" id="inputAddToDoItem" class="m-2">
+                        <input type="text" id="inputAddToDoItem" class="m-2" v-model="addingElement.action" @keyUp.enter="elementAdder">
+                        <div class="btn btn-secondary fs-6 py-1 px-2" @click="elementAdder">Aggiungi</div>
                     </div>
                     <div class="col-12">
                         <ul>

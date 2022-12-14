@@ -28,7 +28,13 @@ createApp ({
                 }
             ],
 
-            listTitle: 'la tua ToDo list'
+            listTitle: 'la tua ToDo list',
+
+            addingElement: 
+                {
+                action: '',
+                done: false
+                }
         }
     },
 
@@ -38,6 +44,14 @@ createApp ({
             if (itemIndex > -1) {
                 this.toDoList.splice(itemIndex, 1);
             }
+        },
+
+        elementAdder() {
+            if (this.addingElement.action.length >= 2) {
+                    this.toDoList.push(this.addingElement);
+                } else {
+                    console.warn('the inserted task is invalid or already present in the list. Try again.');
+                }
         }
     }
 
