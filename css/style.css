@@ -1,3 +1,19 @@
 h1 {
-    color: red;
+    color: rgb(9, 75, 141);
+}
+
+.container {
+    width: 55%;
+    background-color: rgb(181, 151, 0);
+}
+
+ul {
+    width: 80%;
+    background-color: rgb(212, 179, 16);
+}
+
+ul li {
+    border: 2px solid purple;
+    background-color: rgb(226, 194, 37);
+    padding: 1rem;
 }

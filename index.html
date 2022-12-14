@@ -17,23 +17,29 @@
     <title>setup repo</title>
 </head>
 <body>
-    <main>
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h1 id="app">{{ message }}</h1>
-                </div>
-                <div class="col-12">
-                    <ul>
-                        <li>
+    <div id="app">
 
-                        </li>
-                    </ul>
+        <main>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h1>{{ listTitle }}</h1>
+                    </div>
+                    <div class="col-12">
+                        <ul>
+                            <li class="d-flex justify-content-between" v-for="element in toDoList">
+                                <p class="d-inline-block">
+                                    {{element.action}}
+                                </p>
+                                <i class="fa-solid fa-square-xmark my-auto"></i>
+                            </li>
+                        </ul>
+                    </div>
+                    
                 </div>
-
             </div>
-        </div>
-    </main>
+        </main>
+    </div>
 
 
 
