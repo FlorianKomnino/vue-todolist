@@ -5,7 +5,28 @@ const { createApp } = Vue;
 createApp ({
     data() {
         return {
-            message: 'Hello Vue!'
+            toDoList: [
+                {
+                action: 'go to school',
+                done: false
+                },
+                {
+                action: 'go to the market',
+                done: false
+                },
+                {
+                action: 'call girlfriend',
+                done: false
+                },
+                {
+                action: 'lunch spaceshuttle',
+                done: false
+                },
+                {
+                action: 'solve global warming problem',
+                done: false
+                }
+            ]
         }
     }
 }).mount ('#app')
