@@ -8,12 +8,17 @@ h1 {
 }
 
 ul {
-    width: 80%;
     background-color: rgb(212, 179, 16);
+    padding: 0;
 }
 
 ul li {
     border: 2px solid purple;
     background-color: rgb(226, 194, 37);
     padding: 1rem;
+    list-style-type: none;
+}
+
+.doneAction {
+    text-decoration: line-through;
 }
