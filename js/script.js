@@ -28,7 +28,7 @@ createApp ({
                 }
             ],
 
-            listTitle: 'la tua lista'
+            listTitle: 'la tua ToDo list'
         }
     },
 
