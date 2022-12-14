@@ -28,8 +28,7 @@
                     <div class="col-12">
                         <ul>
                             <li class="d-flex justify-content-between" v-for="element in toDoList">
-                                <p class="d-inline-block my-auto" :class="(element.done === true) ? 'doneAction' : ''" 
-                                @click="(element.done === true) ? element.done = false : element.done = true">
+                                <p class="d-inline-block my-auto" :class="actionDoneChecker(element.done)" @click="actionDoneSetter(element.done)">
                                     {{element.action}}
                                 </p>
                                 <i class="fa-solid fa-square-xmark my-auto"></i>
