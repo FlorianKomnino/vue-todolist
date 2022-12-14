@@ -30,26 +30,6 @@ createApp ({
 
             listTitle: 'la tua lista'
         }
-    },
-
-    method: {
-        actionDoneChecker(checkedBoolean) {
-            if (checkedBoolean === true) {
-                return 'doneAction'
-            } else if (checkedBoolean === false) {
-                return ''
-            }
-        },
-        
-        actionDoneSetter (booleanToSet) {
-            if (booleanToSet === true) {
-                booleanToSet = false
-            }  else if (booleanToSet === false) {
-                booleanToSet = true
-            }  
-        }
     }
-
-    
 
 }).mount ('#app')
