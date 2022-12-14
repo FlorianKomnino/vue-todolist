@@ -26,7 +26,9 @@ createApp ({
                 action: 'solve global warming problem',
                 done: false
                 }
-            ]
+            ],
+
+            listTitle: 'la tua lista'
         }
     }
 }).mount ('#app')
