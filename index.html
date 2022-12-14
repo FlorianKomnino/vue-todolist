@@ -14,7 +14,7 @@
     <!-- link to CSS -->
     <link rel="stylesheet" href="./css/style.css">
 
-    <title>setup repo</title>
+    <title>vue toDoList</title>
 </head>
 <body>
     <div id="app">
@@ -31,7 +31,7 @@
                                 <p class="d-inline-block my-auto" :class="(element.done === true) ? 'doneAction' : ''" @click="(element.done === true) ? element.done = false : element.done = true">
                                     {{element.action}}
                                 </p>
-                                <i class="fa-solid fa-square-xmark my-auto"></i>
+                                <i class="fa-solid fa-square-xmark my-auto" @click="elementRemover(element)"></i>
                             </li>
                         </ul>
                     </div>

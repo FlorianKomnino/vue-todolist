@@ -30,6 +30,15 @@ createApp ({
 
             listTitle: 'la tua lista'
         }
+    },
+
+    method: {
+        elementRemover(elementToRemove) {
+            const itemIndex = this.toDoList.indexOf(elementToRemove);
+            if (itemIndex > -1) {
+                this.toDoList.splice(itemIndex, 1);
+            }
+        }
     }
 
 }).mount ('#app')
