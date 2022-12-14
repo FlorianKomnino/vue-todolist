@@ -32,7 +32,7 @@ createApp ({
         }
     },
 
-    method: {
+    methods: {
         elementRemover(elementToRemove) {
             const itemIndex = this.toDoList.indexOf(elementToRemove);
             if (itemIndex > -1) {
